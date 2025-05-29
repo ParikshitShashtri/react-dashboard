@@ -7,8 +7,8 @@ import { Label } from "@/components/ui/label"
 
 const LoginPage = () => {
   return (
-    <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
-      <div className="w-full max-w-sm">
+    <div className="flex justify-center items-center min-h-svh  p-6 md:p-10">
+    <div className="w-full max-w-sm">
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
@@ -40,7 +40,7 @@ const LoginPage = () => {
                 </div>
                 <Input id="password" type="password" required />
               </div>
-              <Button type="submit" className="w-full">
+              <Button type="submit" className="w-full" variant={'secondary'}>
                 Login
               </Button>
               <Button variant="outline" className="w-full">
@@ -49,14 +49,14 @@ const LoginPage = () => {
             </div>
             <div className="mt-4 text-center text-sm">
               Don&apos;t have an account?{" "}
-              <a href="/register" className="underline underline-offset-4">
+              <a href={'/register'} className="underline underline-offset-4">
                 Sign up
               </a>
             </div>
           </form>
         </CardContent>
       </Card>
-    </div>
+      </div>
     </div>
   )
 }

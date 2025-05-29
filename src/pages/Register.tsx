@@ -3,11 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-
 const RegisterPage = () => {
   return (
-    <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
-      <div className="w-full max-w-sm">
+<div className="flex justify-center items-center min-h-svh  p-6 md:p-10">
+    <div className="w-full max-w-sm">
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl">Sign Up</CardTitle>
@@ -48,7 +47,7 @@ const RegisterPage = () => {
             </div>
             <div className="mt-4 text-center text-sm">
               Already have an account?{" "}
-              <a href="/login" className="underline underline-offset-4">
+              <a href={'/login'} className="underline underline-offset-4">
                 Log In
               </a>
             </div>
@@ -56,7 +55,7 @@ const RegisterPage = () => {
         </CardContent>
       </Card>
     </div>
-    </div>
+</div>
   )
 }
 
